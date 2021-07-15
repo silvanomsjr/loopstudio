@@ -13,7 +13,14 @@ window.addEventListener('resize', () =>{
     else{
         document.querySelector('.img-div img').src = "./images/mobile/image-interactive.jpg";
     }
+    if(window.innerWidth >= 560){
+        menu.classList.remove('active');
+        btnMenu.src =  './images/icon-hamburger.svg';
+        switchImg = 0;
+    }
 })
+
+
 
 
 btnMenu.addEventListener('click', () =>{
